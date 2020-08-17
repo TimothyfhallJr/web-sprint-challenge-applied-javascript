@@ -17,11 +17,11 @@ function Header() {
   // creating 
 
 
-  const headerDiv = document.querySelector('div');
+  const headerDiv = document.createElement('div');
   
-  const headerSpan1 = document.querySelector('span');
-  const headerTitle = document.querySelector('h1');
-  const headerSpan2 = document.querySelector('span');
+  const headerSpan1 = document.createElement('span');
+  const headerTitle = document.createElement('h1');
+  const headerSpan2 = document.createElement('span');
 
   // pieces appending
 
@@ -38,9 +38,9 @@ function Header() {
 
   // Content Update 
 
-  headerSpan1.textContent('March 28, 2020');
-  headerTitle.textContent('Lambda Times');
-  headerSpan2.textContent('98°');
+  headerSpan1.textContent ='March 28, 2020';
+  headerTitle.textContent = 'Lambda Times';
+  headerSpan2.textContent = '98°';
 
   return headerDiv;
 

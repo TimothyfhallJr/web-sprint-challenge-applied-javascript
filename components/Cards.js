@@ -20,6 +20,7 @@
 // Add a listener for click events so that when a user clicks on a card, the headline of the article is logged to the console.
 //
 // Use your function to create a card for each of the articles, and append each card to the DOM.
+
 const cardsBody = document.querySelector('.cards-container');
 
 function cardFunction (cardObject) {
@@ -51,7 +52,7 @@ function cardFunction (cardObject) {
     return cardDiv;
 }
 
-axios.get('https://lambda-times-backend.herokuapp.com/articles')
+axios.get('https://lambda-times-api.herokuapp.com/articles')
 .then((res) => {
     console.log('Card Data:',res)
     let articles = Object.values(res.data.articles);
@@ -66,3 +67,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
 .catch((err) => {
     console.log('Wrong Again!')
 });
+
+
+
+
